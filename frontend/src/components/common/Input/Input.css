@@ -1,0 +1,133 @@
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.input-container--full-width {
+  width: 100%;
+}
+
+.input-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.input-label--required::after {
+  content: ' *';
+  color: var(--color-danger);
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.input:disabled {
+  background-color: var(--bg-tertiary);
+  color: var(--text-tertiary);
+  cursor: not-allowed;
+}
+
+.input::placeholder {
+  color: var(--text-tertiary);
+}
+
+/* Sizes */
+.input--small {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.input--medium {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+}
+
+.input--large {
+  padding: 0.75rem 1rem;
+  font-size: 1.125rem;
+}
+
+/* Variants */
+.input--error {
+  border-color: var(--color-danger);
+}
+
+.input--error:focus {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.input--success {
+  border-color: var(--color-success);
+}
+
+.input--success:focus {
+  border-color: var(--color-success);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+/* Icons */
+.input--with-start-icon {
+  padding-left: 2.5rem;
+}
+
+.input--with-end-icon {
+  padding-right: 2.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--text-tertiary);
+}
+
+.input-icon--start {
+  left: 0.75rem;
+}
+
+.input-icon--end {
+  right: 0.75rem;
+}
+
+.input-icon--clickable {
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+.input-icon--clickable:hover {
+  color: var(--text-primary);
+}
+
+/* Helper text */
+.input-helper-text {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.input-error-text {
+  font-size: 0.75rem;
+  color: var(--color-danger);
+}

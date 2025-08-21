@@ -1,0 +1,63 @@
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+/* Padding variants */
+.card--padding-none {
+  padding: 0;
+}
+
+.card--padding-small {
+  padding: 0.75rem;
+}
+
+.card--padding-medium {
+  padding: 1.5rem;
+}
+
+.card--padding-large {
+  padding: 2rem;
+}
+
+/* Shadow variants */
+.card--shadow-none {
+  box-shadow: none;
+}
+
+.card--shadow-small {
+  box-shadow: var(--shadow-sm);
+}
+
+.card--shadow-medium {
+  box-shadow: var(--shadow-md);
+}
+
+.card--shadow-large {
+  box-shadow: var(--shadow-lg);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-header h1,
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6 {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.card-content {
+  /* Content styling will depend on what's inside */
+}

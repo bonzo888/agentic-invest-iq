@@ -5,7 +5,7 @@ import '../styles/LandingPage.css'
 
 const LandingPage: React.FC = () => {
   return (
-    <div className="landing-page">
+    <div className="landing-page" style={{ background: '#ff0000', minHeight: '100vh', padding: '20px' }}>
       {/* Navigation */}
       <nav className="landing-nav">
         <div className="landing-nav__container">

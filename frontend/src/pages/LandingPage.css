@@ -1,14 +1,14 @@
 /* Landing Page Styles */
 .landing-page {
   min-height: 100vh;
-  background: linear-gradient(135deg, var(--bg-secondary) 0%, #e0e7ff 100%);
-  font-family: var(--font-family);
+  background: #ff0000 !important; /* BRIGHT RED TEST - If you see red, CSS is loading! */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
 /* Navigation */
 .landing-nav {
-  background: var(--bg-primary);
-  box-shadow: var(--shadow-sm);
+  background: #ffffff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -33,6 +33,7 @@
   align-items: center;
   gap: 0.5rem;
   transition: transform 0.2s ease;
+  text-decoration: none;
 }
 
 .landing-nav__brand:hover {
@@ -40,14 +41,14 @@
 }
 
 .landing-nav__logo {
-  color: var(--color-primary);
+  color: #3b82f6;
   transition: color 0.3s ease;
 }
 
 .landing-nav__logo-text {
   font-size: 1.25rem;
   font-weight: 700;
-  color: var(--text-primary);
+  color: #111827;
   margin: 0;
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { TrendingUp, Bot, PieChart, Shield, BarChart3, Users, ArrowRight, Sparkles } from 'lucide-react'
-import './LandingPage.css'
+import '../styles/LandingPage.css'
 
 const LandingPage: React.FC = () => {
   return (
